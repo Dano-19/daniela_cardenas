@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../app');
 
 describe('Pruebas del servidor', () => {
-  test('Ruta principal responde con Hola Mundo', async () => {
+  test('Ruta principal responde con Hola mundo', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toBe(200);
     expect(res.text).toContain('Hola Mundo');
