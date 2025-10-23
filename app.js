@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hola, aqui esta elerror intencional');
+  res.send('Hola Mundo');
 });
 
 app.listen(PORT, () => {
